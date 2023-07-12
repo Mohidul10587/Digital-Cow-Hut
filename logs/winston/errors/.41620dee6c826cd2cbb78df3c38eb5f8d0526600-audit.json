@@ -1,0 +1,45 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "/home/mohid/Desktop/Next level web developer course/asingment-3/logs/winston/errors/.41620dee6c826cd2cbb78df3c38eb5f8d0526600-audit.json",
+    "files": [
+        {
+            "date": 1688965678318,
+            "name": "/home/mohid/Desktop/Next level web developer course/asingment-3/logs/winston/errors/phu-2023-10-07-11-error.log",
+            "hash": "ce84f216e224534a31fa74f119fc1311bc6a1e710d04ed5d9241a2669ef7bddd"
+        },
+        {
+            "date": 1689122554398,
+            "name": "/home/mohid/Desktop/Next level web developer course/asingment-3/logs/winston/errors/phu-2023-12-07-06-error.log",
+            "hash": "4e7ffc8af5deaeb6fa902be416929427d7d3e13e835ca7bf188d735cab40c083"
+        },
+        {
+            "date": 1689124716849,
+            "name": "/home/mohid/Desktop/Next level web developer course/asingment-3/logs/winston/errors/phu-2023-12-07-07-error.log",
+            "hash": "ee4d9b62cc635cadb1ce9eaa0364c4fe15e619ee5636298e83aa7c8976a9f3c4"
+        },
+        {
+            "date": 1689127597253,
+            "name": "/home/mohid/Desktop/Next level web developer course/asingment-3/logs/winston/errors/phu-2023-12-07-08-error.log",
+            "hash": "546f98cdfa46ce64e89123f06694e8cdad351370f849662172a88f1f83974e2b"
+        },
+        {
+            "date": 1689130896705,
+            "name": "/home/mohid/Desktop/Next level web developer course/asingment-3/logs/winston/errors/phu-2023-12-07-09-error.log",
+            "hash": "2d33ea7d8b95b9227aded4d75db83f3f4dc840f11f84e2c1ab5d961e37b5432e"
+        },
+        {
+            "date": 1689138491399,
+            "name": "/home/mohid/Desktop/Next level web developer course/asingment-3/logs/winston/errors/phu-2023-12-07-11-error.log",
+            "hash": "b1a7b3b337b720d6ec0169067da93e5c0022734009860f21071e29b79a403549"
+        },
+        {
+            "date": 1689142560088,
+            "name": "/home/mohid/Desktop/Next level web developer course/asingment-3/logs/winston/errors/phu-2023-12-07-12-error.log",
+            "hash": "4d5a935dc019fd4294a4bf2f372e1a0221c76cde29068875d1f3020452768831"
+        }
+    ],
+    "hashType": "sha256"
+}

@@ -1,0 +1,45 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "/home/mohid/Desktop/Next level web developer course/asingment-3/logs/winston/successes/.457ac38673a564cb88324245db2ec853e67d3491-audit.json",
+    "files": [
+        {
+            "date": 1688965678315,
+            "name": "/home/mohid/Desktop/Next level web developer course/asingment-3/logs/winston/successes/phu-2023-10-07-11-success.log",
+            "hash": "f649014353205f809cfec25055b1159f1e6431833e797b3f59037f742ba70949"
+        },
+        {
+            "date": 1689122554394,
+            "name": "/home/mohid/Desktop/Next level web developer course/asingment-3/logs/winston/successes/phu-2023-12-07-06-success.log",
+            "hash": "52b5b2060cb6485f4548d13c48ed37aa7dc3f55a43a3709f3f44dc6d705938c9"
+        },
+        {
+            "date": 1689124666921,
+            "name": "/home/mohid/Desktop/Next level web developer course/asingment-3/logs/winston/successes/phu-2023-12-07-07-success.log",
+            "hash": "58768cf9565a6641d4dad64a75ba601d480b976c98788513e29af2b23791e449"
+        },
+        {
+            "date": 1689127597247,
+            "name": "/home/mohid/Desktop/Next level web developer course/asingment-3/logs/winston/successes/phu-2023-12-07-08-success.log",
+            "hash": "ba45a095a04a5c42ac4ead4a4fabffc227bbe2fde67f10a49f66212d9cd5ead8"
+        },
+        {
+            "date": 1689130896702,
+            "name": "/home/mohid/Desktop/Next level web developer course/asingment-3/logs/winston/successes/phu-2023-12-07-09-success.log",
+            "hash": "e082e4276606b538051811f30f1af9334fbf4c949313ecdedbed82103f1a19ed"
+        },
+        {
+            "date": 1689138491394,
+            "name": "/home/mohid/Desktop/Next level web developer course/asingment-3/logs/winston/successes/phu-2023-12-07-11-success.log",
+            "hash": "f858163ec17c945f10d8d3dcc708395f3c99ab66b325b15fee57c4a846b7a65f"
+        },
+        {
+            "date": 1689142560082,
+            "name": "/home/mohid/Desktop/Next level web developer course/asingment-3/logs/winston/successes/phu-2023-12-07-12-success.log",
+            "hash": "cad430b26f4dff385ff541e5254b540a6e81c49b557ba7b61b358af2b5695325"
+        }
+    ],
+    "hashType": "sha256"
+}
