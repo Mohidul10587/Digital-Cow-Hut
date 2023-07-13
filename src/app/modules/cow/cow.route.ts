@@ -9,5 +9,7 @@ router.post(
   validateRequest(CowValidation.createCowZodSchema),
   CowController.createCow
 );
+router.get('/', CowController.getAllCows);
+router.get('/single-cow/:id', CowController.getSingleCow);
 
 export const CowRoutes = router;

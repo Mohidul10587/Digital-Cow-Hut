@@ -1,5 +1,12 @@
 import { Schema, model } from 'mongoose';
-import { CowModel, ICow } from './cow.interface';
+import {
+  CowModel,
+  ICow,
+  breed,
+  category,
+  label,
+  location,
+} from './cow.interface';
 
 const cowSchema = new Schema(
   {
@@ -17,11 +24,11 @@ const cowSchema = new Schema(
     },
     location: {
       type: String,
-      required: true,
+      enum: location,
     },
     breed: {
       type: String,
-      required: true,
+      enum: breed,
     },
     weight: {
       type: Number,
@@ -29,11 +36,11 @@ const cowSchema = new Schema(
     },
     label: {
       type: String,
-      required: true,
+      enum: label,
     },
     category: {
       type: String,
-      required: true,
+      enum: category,
     },
     seller: {
       type: Schema.Types.ObjectId,

@@ -6,9 +6,18 @@ import { UserValidation } from './user.validation';
 const router = express.Router();
 
 router.post(
-  '/create-user',
+  '/signup',
   validateRequest(UserValidation.createUserZodSchema),
   UserController.createUser
 );
+router.patch(
+  '/:id',
+  validateRequest(UserValidation.updateUserZodSchema),
+  UserController.updateUser
+);
+router.get('/', UserController.getUsers);
+router.get('/single-user/:id', UserController.getSingleUsers);
+
+router.delete('/:id', UserController.deleteUsers);
 
 export const UserRoutes = router;
