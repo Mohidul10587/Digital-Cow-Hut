@@ -19,6 +19,12 @@ const createUser = async (payloads: IUser) => {
 };
 
 const deleteUser = async (id: string) => {
+  const isExist = await User.findOne({ _id: Object(id) });
+
+  if (!isExist) {
+    throw new ApiError(httpStatus.NOT_FOUND, 'Student not found !');
+  }
+
   const result = User.deleteOne({ _id: Object(id) });
   return result;
 };

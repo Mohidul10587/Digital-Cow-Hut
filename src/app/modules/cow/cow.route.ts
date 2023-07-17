@@ -10,6 +10,12 @@ router.post(
   CowController.createCow
 );
 router.get('/', CowController.getAllCows);
-router.get('/single-cow/:id', CowController.getSingleCow);
+router.delete('/delete-cow/:id', CowController.deleteCow);
 
+router.get('/single-cow/:id', CowController.getSingleCow);
+router.patch(
+  '/update-cow/:id',
+  validateRequest(CowValidation.updateCowZodSchema),
+  CowController.updateCow
+);
 export const CowRoutes = router;

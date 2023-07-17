@@ -52,4 +52,10 @@ export type ICow = {
   seller: Types.ObjectId | IUser;
 };
 
+export type ICowFilters = {
+  searchTerm?: string;
+  id?: string;
+  name?: string;
+};
+
 export type CowModel = Model<ICow, Record<string, unknown>>;
