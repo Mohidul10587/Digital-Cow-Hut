@@ -17,7 +17,14 @@ const getAllCows = async (
   filters: ICowFilters,
   paginationOptions: IPaginationOptions
 ) => {
-  const { searchTerm, ...filtersData } = filters;
+  const {
+    searchTerm,
+    maxPrice,
+    minPrice,
+    maxWeight,
+    minWeight,
+    ...filtersData
+  } = filters;
 
   const { page, limit, skip, sortBy, sortOrder } =
     paginationHelpers.calculatePagination(paginationOptions);
@@ -40,6 +47,39 @@ const getAllCows = async (
       $and: Object.entries(filtersData).map(([field, value]) => ({
         [field]: value,
       })),
+    });
+  }
+
+  // find by price, weight
+  if (maxPrice) {
+    andConditions.push({
+      price: {
+        $lte: maxPrice,
+      },
+    });
+  }
+
+  if (minPrice) {
+    andConditions.push({
+      price: {
+        $gte: minPrice,
+      },
+    });
+  }
+
+  if (maxWeight) {
+    andConditions.push({
+      weight: {
+        $lte: maxWeight,
+      },
+    });
+  }
+
+  if (minWeight) {
+    andConditions.push({
+      weight: {
+        $gte: minWeight,
+      },
     });
   }
 

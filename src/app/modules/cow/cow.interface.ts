@@ -57,6 +57,10 @@ export type ICowFilters = {
   name?: string;
   breed?: string;
   category?: string;
+  maxPrice?: string;
+  minPrice?: string;
+  maxWeight?: string;
+  minWeight?: string;
 };
 
 export type CowModel = Model<ICow, Record<string, unknown>>;
