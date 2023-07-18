@@ -54,8 +54,9 @@ export type ICow = {
 
 export type ICowFilters = {
   searchTerm?: string;
-  id?: string;
   name?: string;
+  breed?: string;
+  category?: string;
 };
 
 export type CowModel = Model<ICow, Record<string, unknown>>;

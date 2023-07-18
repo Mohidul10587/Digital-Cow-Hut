@@ -17,13 +17,13 @@ const getAllCows = async (
   filters: ICowFilters,
   paginationOptions: IPaginationOptions
 ) => {
-  // Extract searchTerm to implement search query
   const { searchTerm, ...filtersData } = filters;
+
   const { page, limit, skip, sortBy, sortOrder } =
     paginationHelpers.calculatePagination(paginationOptions);
 
   const andConditions = [];
-  // Search needs $or for searching in specified fields
+
   if (searchTerm) {
     andConditions.push({
       $or: cowSearchableFields.map(field => ({
@@ -35,8 +35,6 @@ const getAllCows = async (
     });
   }
 
-  // home page , profile , masjid create page ,favorite page ,settings page ,navbar
-  // Filters needs $and to full fill all the conditions
   if (Object.keys(filtersData).length) {
     andConditions.push({
       $and: Object.entries(filtersData).map(([field, value]) => ({
@@ -45,7 +43,6 @@ const getAllCows = async (
     });
   }
 
-  // Dynamic  Sort needs  field to  do sorting
   const sortConditions: { [key: string]: SortOrder } = {};
   if (sortBy && sortOrder) {
     sortConditions[sortBy] = sortOrder;
