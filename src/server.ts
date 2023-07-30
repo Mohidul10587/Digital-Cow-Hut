@@ -1,4 +1,5 @@
 /* eslint-disable no-console */
+import { Request, Response } from 'express';
 import { Server } from 'http';
 import mongoose from 'mongoose';
 import app from './app';
@@ -41,6 +42,11 @@ async function bootstrap() {
 }
 
 bootstrap();
+
+app.get('/', (req: Request, res: Response) => {
+  res.send('This is deployed on renderer successfully');
+  res.end();
+});
 
 // process.on('SIGTERM', () => {
 //   logger.info('SIGTERM is received');
