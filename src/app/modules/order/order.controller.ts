@@ -3,7 +3,7 @@ import catchAsync from '../../../shared/catchAsync';
 import sendResponse from '../../../shared/sendResponse';
 import { orderService } from './order.service';
 
-// create
+// create a order
 const createOrder = catchAsync(async (req, res) => {
   const requestedData = req.body;
 
