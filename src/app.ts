@@ -33,5 +33,8 @@ app.use((req: Request, res: Response, next: NextFunction) => {
   });
   next();
 });
-
+app.get('/', (req: Request, res: Response) => {
+  res.send('This is deployed on renderer successfully');
+  res.end();
+});
 export default app;

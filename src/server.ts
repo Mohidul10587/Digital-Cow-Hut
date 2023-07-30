@@ -1,5 +1,4 @@
 /* eslint-disable no-console */
-import { Request, Response } from 'express';
 import { Server } from 'http';
 import mongoose from 'mongoose';
 import app from './app';
@@ -22,10 +21,6 @@ async function bootstrap() {
     server = app.listen(config.port, () => {
       // logger.info(`Application  listening on port ${config.port}`);
       console.log(`Application  listening on port ${config.port}`);
-      app.get('/', (req: Request, res: Response) => {
-        res.send('This is deployed on renderer successfully');
-        res.end();
-      });
     });
   } catch (err) {
     console.log(err);
