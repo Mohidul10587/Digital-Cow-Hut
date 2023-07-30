@@ -15,7 +15,10 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.use('/api/v1', routes);
-
+app.use('/', (req: Request, res: Response) => {
+  res.send('This is deployed on renderer successfully');
+  res.end();
+});
 //global error handler
 app.use(globalErrorHandler);
 
@@ -33,8 +36,5 @@ app.use((req: Request, res: Response, next: NextFunction) => {
   });
   next();
 });
-app.get('/', (req: Request, res: Response) => {
-  res.send('This is deployed on renderer successfully');
-  res.end();
-});
+
 export default app;
