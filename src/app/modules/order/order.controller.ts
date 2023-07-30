@@ -1,12 +1,13 @@
 import httpStatus from 'http-status';
 import catchAsync from '../../../shared/catchAsync';
 import sendResponse from '../../../shared/sendResponse';
+import { orderService } from './order.service';
 
 // create
 const createOrder = catchAsync(async (req, res) => {
-  const bodyData = req.body;
+  const requestedData = req.body;
 
-  const order = await orderService.createOrder(bodyData);
+  const order = await orderService.createOrder(requestedData);
 
   sendResponse(res, {
     data: order,
