@@ -22,6 +22,10 @@ async function bootstrap() {
     server = app.listen(config.port, () => {
       // logger.info(`Application  listening on port ${config.port}`);
       console.log(`Application  listening on port ${config.port}`);
+      app.get('/', (req: Request, res: Response) => {
+        res.send('This is deployed on renderer successfully');
+        res.end();
+      });
     });
   } catch (err) {
     console.log(err);
@@ -42,11 +46,6 @@ async function bootstrap() {
 }
 
 bootstrap();
-
-app.get('/', (req: Request, res: Response) => {
-  res.send('This is deployed on renderer successfully');
-  res.end();
-});
 
 // process.on('SIGTERM', () => {
 //   logger.info('SIGTERM is received');
